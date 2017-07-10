@@ -46,9 +46,16 @@ waterfall([
   // result now equals 'done'
   startBlin();
 });
-let level = 0;
+let level = 1;
 let startBlin = ()=> {
   setInterval(()=> {
-    pins[3].set(1-level);
+    if (level == 1){
+      pins[3].reset();
+      level=0;
+    }
+    else {
+      pins[3].set();
+      level=1;
+    }
   }, 1000)
 }
