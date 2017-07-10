@@ -10,6 +10,10 @@ waterfall([
     var gpio16 = gpio.export(16, {
       interval: 200,
       ready: function () {
+        intervalTimer = setInterval(function() {
+          gpio16.set();
+          setTimeout(function() { gpio16.reset(); }, 500);
+        }, 1000);
         pins.push(gpio16);
         cb(null);
       }
@@ -37,10 +41,6 @@ waterfall([
     var gpio36 = gpio.export(36, {
       interval: 200,
       ready: function () {
-        intervalTimer = setInterval(function() {
-          gpio36.set();
-          setTimeout(function() { gpio36.reset(); }, 500);
-        }, 1000);
         pins.push(gpio36);
         cb(null);
       }
