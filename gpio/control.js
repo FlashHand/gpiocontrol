@@ -37,6 +37,10 @@ waterfall([
     var gpio36 = gpio.export(36, {
       interval: 200,
       ready: function () {
+        intervalTimer = setInterval(function() {
+          gpio36.set();
+          setTimeout(function() { gpio36.reset(); }, 500);
+        }, 1000);
         pins.push(gpio36);
         cb(null);
       }
@@ -48,14 +52,15 @@ waterfall([
 });
 let level = 1;
 let startBlin = ()=> {
-  setInterval(()=> {
-    if (level == 1){
-      pins[3].reset();
-      level=0;
-    }
-    else {
-      pins[3].set();
-      level=1;
-    }
-  }, 1000)
+  // setInterval(()=> {
+  //   if (level == 1){
+  //     pins[3].reset();
+  //     level=0;
+  //   }
+  //   else {
+  //     pins[3].set();
+  //     level=1;
+  //   }
+  //   console.log(level);
+  // }, 1000)
 }
