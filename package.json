@@ -2,6 +2,7 @@
   "name": "lighthouse-pi",
   "version": "0.0.1",
   "dependencies": {
+    "async": "^2.5.0",
     "gpio": "^0.2.7"
   }
 }
