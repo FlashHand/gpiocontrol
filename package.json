@@ -1,0 +1,7 @@
+{
+  "name": "lighthouse-pi",
+  "version": "0.0.1",
+  "dependencies": {
+    "gpio": "^0.2.7"
+  }
+}
