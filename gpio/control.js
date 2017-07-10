@@ -51,6 +51,7 @@ waterfall([
 let level = 1;
 let startBlin = ()=> {
   intervalTimer = setInterval(function() {
+    console.log(pins);
     pins[0].set();
     setTimeout(function() { pins[0].reset(); }, 500);
   }, 1000);

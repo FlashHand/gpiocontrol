@@ -1,6 +1,7 @@
 {
   "name": "lighthouse-pi",
   "version": "0.0.1",
+  "main":"electron.js",
   "dependencies": {
     "async": "^2.5.0",
     "gpio": "^0.2.7"
