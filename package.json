@@ -1,13 +1,10 @@
 {
   "name": "lighthouse-pi",
-  "electronVersion": "0.0.1",
+  "version":"0.0.1",
   "main":"electron.js",
-  "scripts": {
-    "start": "electron electron.js",
-    "packager": "electron-packager . --platform=linux --arch=armv7l --out ../OutApp --version 1.4.15 --overwrite"
-  },
-  "dependencies": {
+  "devDependencies": {
     "async": "^2.5.0",
-    "gpio": "^0.2.7"
+    "gpio": "^0.2.7",
+    "electron":"^1.4.15"
   }
 }
