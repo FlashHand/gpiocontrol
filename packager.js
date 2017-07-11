@@ -7,7 +7,6 @@ let options = {
   platform:"linux",
   arch:"all",
   buildVersion:"1",
-  electronVersion:"1.4.15",
   prune:true,
   out:'../lighthouse-pi-apps'
 }
