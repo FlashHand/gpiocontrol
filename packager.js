@@ -5,7 +5,7 @@ var platform = process.argv[2];
 let options = {
   dir:__dirname,
   platform:"linux",
-  arch:"all",
+  arch:"armv7l",
   buildVersion:"1",
   prune:true,
   out:'../lighthouse-pi-apps'
