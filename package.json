@@ -3,8 +3,8 @@
   "electronVersion": "0.0.1",
   "main":"electron.js",
   "scripts": {
-    "start": "electron main.js",
-    "packager": "electron-packager . ----platform=linux --arch=armv7l --out ../OutApp --version 1.4.15 --overwrite "
+    "start": "electron electron.js",
+    "packager": "electron-packager . --platform=linux --arch=armv7l --out ../OutApp --version 1.4.15 --overwrite"
   },
   "dependencies": {
     "async": "^2.5.0",
